@@ -5,7 +5,7 @@ Starter image for when I want to mess around with React
 ## Features
 
 - Parcel for transpiling & bundling
-- Dev server and hot module reloading
+- Dev server with hot module reloading
 - ES modules
 - Typescript
 - Jest for tests
@@ -13,11 +13,11 @@ Starter image for when I want to mess around with React
 
 ## Usage
 
-start app with `npm start`
+Start dev server with `npm start`
 
-run tests with `npm test`
+Run tests with `npm test`
 
-releasable build with `npm build`
+Releasable build with `npm build`
 
 ## Irritations
 
