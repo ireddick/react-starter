@@ -1,0 +1,25 @@
+{
+  "name": "react-starter",
+  "license": "ISC",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel",
+    "prebuild": "rimraf dist",
+    "build": "parcel build",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-typescript": "^7.16.7",
+    "babel-jest": "^27.5.1",
+    "jest": "^27.5.1",
+    "parcel": "^2.4.1",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
