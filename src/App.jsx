@@ -1,5 +1,5 @@
 import hello from "./hello"
 
 export const App = () => (
-  <div>{hello()}</div>
+  <div class="app">{hello()}</div>
 )
