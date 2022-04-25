@@ -1,4 +1,4 @@
-import hello from '../src/hello'
+import { hello } from '../src/app-model'
 
 test('hello', () => {
   const result = hello()
