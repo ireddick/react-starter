@@ -1,7 +1,7 @@
-import { hello } from '../src/app-model'
+import { hello } from "../src/app-model"
 
-test('hello', () => {
+test("hello", () => {
   const result = hello()
 
-  expect(result).toEqual('Hello, World! 🐶')
+  expect(result).toEqual("Hello, World! 🐶")
 })
