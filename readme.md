@@ -21,10 +21,10 @@ Releasable build with `npm build` (outputs to /dist)
 
 ## Irritations
 
-Parcel aims to be zero config for common use cases, and thus doesn't use a Babel config. However Jest *does* use a Babel config, so we have to add that and bring in a few Babel dependencies.
+Parcel doesn't typecheck by default, though has experimental support - the opinion they have is that typechecking is a job for an IDE, or something that's run in a build server. I disagree, so we currently do an explicit typecheck with TSC up front before running tests with Jest, starting Parcel in dev server mode, or doing a production build. To this end we have a small tsconfig. This means that we have two separate opinions on how to handle TypeScript - Parcel and TSC.
 
-Because Parcel will read the Babel config and be unhappy, we also have to add a Parcel config that tells it not to do that.
+Parcel aims to be zero config for common use cases, and thus doesn't use a Babel config. However Jest *does* use a Babel config, so we have to add that and bring in a few Babel dependencies. Because Parcel will read the Babel config and be unhappy, we also have to add a Parcel config that tells it not to do that. This means we have two separate opinions about Babel - Parcel and Jest.
 
 See https://parceljs.org/languages/javascript/#usage-with-other-tools
 
-Overall this is an irritating mis-match, where we have two different opinions about the transpilation config.
+Overall these are irritating mis-matches, which add complication, duplication, and reduce the value of using a zero config tool in the first place.
