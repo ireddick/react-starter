@@ -4,10 +4,11 @@
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel",
+    "start": "npm run check && parcel",
     "prebuild": "rimraf dist",
-    "build": "parcel build",
-    "test": "jest"
+    "build": "npm run check && parcel build",
+    "check": "tsc --skipLibCheck --noEmit",
+    "test": "npm run check && jest"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.16.11",
