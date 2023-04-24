@@ -17,7 +17,7 @@ Start dev server with `npm start`
 
 Run tests with `npm test`
 
-Releasable build with `npm build` (outputs to /dist)
+Releasable build with `npm run build` (outputs to /dist)
 
 ## Irritations
 
